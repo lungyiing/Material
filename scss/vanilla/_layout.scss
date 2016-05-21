@@ -57,3 +57,42 @@
     }
   }
 }
+
+// Searchbox
+#Search {
+  div {
+    @extend .mui-textfield;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .InputBox {
+    width: auto;
+    display: block;
+    padding: 5px 10px;
+    height: 50px;
+    font-size: inherit;
+
+    margin: 10px auto auto;
+
+    background: transparent !important;
+    border-color: transparent;
+
+    color: white !important;
+    @extend .mui--text-title;
+
+    &::placeholder {
+      color: white !important;
+      @extend .mui--text-title;
+    }
+
+    &:focus {
+      border-color: white !important;
+      height: 50px;
+    }
+  }
+  #Form_Go {
+    display: none;
+  }
+}

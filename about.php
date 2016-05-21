@@ -7,5 +7,5 @@ $ThemeInfo['material'] = array(
     'Version' => '0.1',
     'Author' => 'Chris Ireland',
     'AuthorEmail' => 'christopher.ireland@me.com',
-    'License' => 'GPL v2'
+    'License' => 'MIT'
 );

@@ -33,6 +33,10 @@
   .Buttons .Back {
     display: none;
   }
+
+  .InputBox:focus {
+    background: transparent !important;
+  }
 }
 
 // Messages

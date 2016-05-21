@@ -1,1 +1,0 @@
- sass --watch scss/material.scss:design/custom.css
