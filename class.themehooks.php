@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Sets config variables on enabling MyThemeName, adds locale data to the view,
- * and adds a respond button to the discussion page.
- */
 class MaterialThemeHooks implements Gdn_IPlugin
 {
     /**
