@@ -6,17 +6,19 @@ html, body {
 }
 main {
   min-height: 100%;
-  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-  height: 100%;
-  margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+  /* equal to footer height */
+  margin-bottom: -$footer-height;
 }
-footer, .push {
-  height: 155px; /* .push must be the same height as .footer */
+main:after {
+  content: "";
+  display: block;
+}
+footer, main:after {
+  height: $footer-height;
 }
 
-/*
-
-Sticky Footer by Ryan Fait
-http://ryanfait.com/
-
-*/
+footer {
+  height: $footer-height;
+  padding: 30px;
+  background-color: $mui-appbar-bg-color;
+}

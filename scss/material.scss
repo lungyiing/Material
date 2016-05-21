@@ -1,6 +1,9 @@
 // Import Materialize (MIT License)
 @import "mui";
 
+// Config
+$footer-height: 100px;
+
 // Import hacks
 @import "vanilla/sidedraw";
 @import "vanilla/common";

@@ -5,7 +5,7 @@
     <script src="//cdn.muicss.com/mui-0.5.9/js/mui.min.js"></script>
 </head>
 <body id="{$BodyID}" class="{$BodyClass} hide-sidedrawer">
-<div id="Frame">
+<main id="Frame">
     <div id="sidedrawer" class="mui--no-user-select">
         <div id="sidedrawer-brand" class="mui--appbar-line-height"><span class="mui--text-title">{logo}</span></div>
         <div class="mui-divider"></div>
@@ -29,7 +29,7 @@
         </div>
     </header>
 
-    <main id="Body">
+    <section id="Body">
         <div class="mui-container">
             <div class="mui-row">
                 <div id="Content" class=" mui-col-xs-12 mui-col-lg-9">{asset name="Content"}</div>
@@ -39,14 +39,13 @@
                 </div>
             </div>
         </div>
+    </section>
 
-        <footer>
-            <a class="mui--text-center mui--text-black" href="{vanillaurl}">Powered by Vanilla</a>
-            {asset name="Foot"}
-        </footer>
-    </main>
-
-</div>
+</main>
+<footer class="mui--text-center">
+    <a class="PoweredByVanilla" href="{vanillaurl}">Powered by Vanilla</a>
+    {asset name="Foot"}
+</footer>
 {event name="AfterBody"}
 </body>
 </html>
