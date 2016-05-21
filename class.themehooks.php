@@ -24,7 +24,7 @@ class MaterialThemeHooks implements Gdn_IPlugin
         saveToConfig(array(
             'Vanilla.Discussions.Layout' => 'table',
             'Vanilla.Categories.Layout' => 'table',
-            'Vanilla.Categories.DoHeadings' => true,
+            'Vanilla.Categories.DoHeadings' => false,
         ), null, true);
         return true;
     }

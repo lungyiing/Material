@@ -36,7 +36,7 @@
   @extend .mui--text-white;
 }
 
-// Data list & table
+// Data table
 .DataTableWrap {
   @extend .mui-panel;
 
@@ -45,8 +45,30 @@
     @extend .mui-table--bordered;
   }
 
-  .CategoryName a {
-    color: black;
+  a {
+    color: black !important;
+  }
+}
+
+.CategoryName a {
+  color: black;
+}
+
+// Mixed layout
+div.Categories {
+  @extend .mui-panel;
+
+  a {
+    color: black !important;
+  }
+}
+
+// Datalist {
+.DataList.CategoryList {
+  @extend .mui-panel;
+
+  a {
+    color: black !important;
   }
 }
 
