@@ -46,6 +46,7 @@
 
 </main>
 <footer class="mui--text-center">
+    <div class="mui--text-white">Proudly Powered By</div>
     <a class="PoweredByVanilla" href="{vanillaurl}">Powered by Vanilla</a>
     {asset name="Foot"}
 </footer>

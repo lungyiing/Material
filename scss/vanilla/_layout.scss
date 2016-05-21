@@ -76,6 +76,11 @@ div.Categories {
 #sidedrawer {
   .mui--text-title {
     line-height: $mui-appbar-height;
+
+    img {
+      max-width: 200px;
+      height: auto;
+    }
   }
 }
 #sidenav {

@@ -20,17 +20,15 @@ class MaterialThemeHooks implements Gdn_IPlugin
      */
     public function setup()
     {
-        // Set some config settings for a table layout
+        // Set some config settings for a table layout & mobile theme
         saveToConfig(array(
             'Vanilla.Discussions.Layout' => 'table',
             'Vanilla.Categories.Layout' => 'table',
             'Vanilla.Categories.DoHeadings' => false,
+            'Garden.MobileTheme' => 'Material'
         ), null, true);
         return true;
     }
     
     // @todo some custom hooks for pages
-
-    
-
 }

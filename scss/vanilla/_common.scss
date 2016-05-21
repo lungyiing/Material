@@ -18,6 +18,11 @@
   &.BigButton {
     width: 100%;
   }
+
+  &.SignInPopup,
+  &.ApplyButton {
+    @extend .mui-btn--small;
+  }
 }
 
 // Forms
@@ -66,6 +71,16 @@ input.SmallInput:focus, input.InputBox:focus, textarea:focus {
     background: $mui-btn-danger-bg-color;
     color: $mui-btn-danger-font-color;
   }
+}
+
+span.Warning,
+div.Warning {
+  @extend .mui-panel;
+
+  border: none;
+
+  background: $mui-btn-danger-bg-color;
+  color: $mui-btn-danger-font-color;
 }
 
 // Dropdown menus
