@@ -1,0 +1,14 @@
+///
+// Material Theme for Vanilla
+// - User profile CSS
+///
+
+// Profile image override
+.ProfilePhotoLarge {
+  width: 100%;
+}
+
+// Remove underline on handle
+.NavButton.Handle {
+  text-decoration: none;
+}

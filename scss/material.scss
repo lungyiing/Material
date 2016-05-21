@@ -5,7 +5,9 @@
 $footer-height: 100px;
 
 // Import hacks
+@import "vanilla/iconsoverride";
 @import "vanilla/sidedraw";
 @import "vanilla/common";
 @import "vanilla/layout";
 @import "vanilla/footer";
+@import "vanilla/profile";

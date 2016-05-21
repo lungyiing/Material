@@ -2,9 +2,9 @@
 <html>
 <head>
     {asset name="Head"}
-    <script src="//cdn.muicss.com/mui-0.5.9/js/mui.min.js"></script>
 </head>
 <body id="{$BodyID}" class="{$BodyClass} hide-sidedrawer">
+
 <main id="Frame">
     <div id="sidedrawer" class="mui--no-user-select">
         <div id="sidedrawer-brand" class="mui--appbar-line-height"><span class="mui--text-title">{logo}</span></div>
@@ -50,5 +50,46 @@
     {asset name="Foot"}
 </footer>
 {event name="AfterBody"}
+
+{literal}
+    <script>
+        // Theme Sidedraw (3rd Party)
+        // Third Party Sidedraw
+        jQuery(function ($) {
+            var $bodyEl = $('body'),
+                    $sidedrawerEl = $('#sidedrawer');
+
+            function showSidedrawer() {
+                // show overlay
+                var options = {
+                    onclose: function () {
+                        $sidedrawerEl
+                                .removeClass('active')
+                                .appendTo(document.body);
+                    }
+                };
+
+                var $overlayEl = $(mui.overlay('on', options));
+
+                // show element
+                $sidedrawerEl.appendTo($overlayEl);
+                setTimeout(function () {
+                    $sidedrawerEl.addClass('active');
+                }, 20);
+
+            }
+
+
+            function hideSidedrawer() {
+                $bodyEl.toggleClass('hide-sidedrawer');
+
+            }
+
+            $('.js-show-sidedrawer').on('click', showSidedrawer);
+            $('.js-hide-sidedrawer').on('click', hideSidedrawer);
+
+        });
+    </script>
+{/literal}
 </body>
 </html>

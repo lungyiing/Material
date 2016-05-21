@@ -1,14 +1,25 @@
-// Forum Layouts
+///
+// Material Theme for Vanilla
+// - CSS for page layouts
+///
+
+// Main body layout
 #Panel {
   width: 25%;
 }
 
 @media (max-width: $mui-screen-lg-min) {
   #Panel {
-    width: 96%;
-    margin: auto;
+    width: 95%;
     display: block;
-    margin-left: 15px;
+    margin: auto auto auto 15px;
+
+    #Body {
+
+      .mui-container {
+        padding: 100px 10px 20px 10px;
+      }
+    }
   }
 }
 
@@ -25,14 +36,17 @@
   @extend .mui--text-white;
 }
 
-// Data list
-.DataList:not(:empty) {
-  @extend .mui-table;
-  @extend .mui-table--bordered;
+// Data list & table
+.DataTableWrap {
   @extend .mui-panel;
 
-  .Item {
-    @extend tr;
+  table {
+    @extend .mui-table;
+    @extend .mui-table--bordered;
+  }
+
+  .CategoryName a {
+    color: black;
   }
 }
 
@@ -92,7 +106,9 @@
       height: 50px;
     }
   }
+
   #Form_Go {
     display: none;
   }
 }
+

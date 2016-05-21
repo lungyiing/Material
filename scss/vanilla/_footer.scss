@@ -1,3 +1,9 @@
+///
+// Material Theme for Vanilla
+// - Footer specific CSS
+///
+
+// Cheeky sticky footer
 * {
   margin: 0;
 }
@@ -21,6 +27,7 @@ footer, main:after {
   height: $footer-height;
 }
 
+// Actual footer styling
 footer {
   height: $footer-height;
   padding: 30px;
