@@ -1,0 +1,18 @@
+///
+// Material Theme for Vanilla
+// - Search page css
+///
+
+.SearchForm {
+  
+  .Button {
+    display: none;
+  }
+  
+  .Inputbox {
+    border: none;
+    border-bottom: 1px solid $mui-input-border-color;
+    font-size: $mui-input-font-size;
+  }
+}
+

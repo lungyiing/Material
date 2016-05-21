@@ -21,6 +21,7 @@
 }
 
 // Forms
+.SiteSearch,
 .TextBoxWrapper {
   @extend .mui-textfield;
 }
@@ -35,10 +36,10 @@
   .Buttons .Back {
     display: none;
   }
+}
 
-  .InputBox:focus {
-    background: transparent !important;
-  }
+input.SmallInput:focus, input.InputBox:focus, textarea:focus {
+  background: transparent !important;
 }
 
 // Messages
@@ -77,4 +78,10 @@
   a:hover {
     background-color: $mui-primary-color !important;
   }
+}
+
+// Titles
+h1.H {
+  border-bottom: solid $mui-divider-color 1px;
+  padding-bottom: 5px;
 }

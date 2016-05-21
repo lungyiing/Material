@@ -20,7 +20,7 @@ class MaterialThemeHooks implements Gdn_IPlugin
      */
     public function setup()
     {
-        // Set some config settings for a modern layout with top-level categories displayed as headings.
+        // Set some config settings for a table layout
         saveToConfig(array(
             'Vanilla.Discussions.Layout' => 'table',
             'Vanilla.Categories.Layout' => 'table',
@@ -28,5 +28,9 @@ class MaterialThemeHooks implements Gdn_IPlugin
         ), null, true);
         return true;
     }
+    
+    // @todo some custom hooks for pages
+
+    
 
 }

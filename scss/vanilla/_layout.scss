@@ -73,7 +73,15 @@ div.Categories {
 }
 
 // Sidenav
+#sidedrawer {
+  .mui--text-title {
+    line-height: $mui-appbar-height;
+  }
+}
 #sidenav {
+  .mui--text-title {
+    line-height: $mui-appbar-height;
+  }
   li {
     a {
       display: block;
