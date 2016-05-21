@@ -1,0 +1,56 @@
+// Forum Layouts
+#Panel {
+  width: 25%;
+}
+
+@media (max-width: $mui-screen-lg-min) {
+  #Panel {
+    width: 96%;
+    margin: auto;
+    display: block;
+    margin-left: 15px;
+  }
+}
+
+#Body {
+  padding: 100px;
+}
+
+// Breadcrumbs
+.Crumb,
+.CrumbLabel a {
+  @extend .mui--text-white;
+}
+
+// Data list
+.DataList:not(:empty)  {
+  @extend .mui-table;
+  @extend .mui-table--bordered;
+  @extend .mui-panel;
+
+  .Item {
+    @extend tr;
+  }
+}
+
+// Sidenav
+#sidenav {
+  li {
+    a {
+      display: block;
+      padding: 15px 22px;
+      cursor: pointer;
+      font-weight: bold;
+      @extend .mui--text-black;
+
+      &:hover {
+        text-decoration: none !important;
+      }
+    }
+
+    &:hover {
+      background-color: #E0E0E0;
+
+    }
+  }
+}

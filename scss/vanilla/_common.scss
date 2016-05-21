@@ -1,0 +1,74 @@
+// Common CSS elements such as buttons
+
+// Buttons
+.Button {
+  @extend .mui-btn;
+  @extend .mui-btn--accent;
+
+  &.Primary {
+    @extend .mui-btn--primary;
+  }
+
+  &.Cancel {
+    @extend .mui-btn--danger;
+  }
+
+  &.BigButton {
+    width: 100%;
+  }
+}
+
+// Forms
+.TextBoxWrapper {
+  @extend .mui-textfield;
+}
+
+.FormWrapper {
+  @extend .mui-panel;
+
+  .Button {
+    @extend .mui-btn--small;
+  }
+
+  .Buttons .Back {
+    display: none;
+  }
+}
+
+// Messages
+.DismissMessage {
+  @extend .mui-panel;
+  border: none !important;
+
+  &.CasualMessage {
+    background: $mui-btn-accent-bg-color;
+    color: $mui-btn-accent-font-color;
+  }
+
+  &.InfoMessage {
+    background: $mui-btn-primary-bg-color;
+    color: $mui-btn-primary-font-color;
+  }
+
+  &.AlertMessage {
+    background: mui-color("amber", "A700");
+    color: mui-color("black");
+  }
+
+  &.WarningMessage {
+    background: $mui-btn-danger-bg-color;
+    color: $mui-btn-danger-font-color;
+  }
+}
+
+// Dropdown menus
+.MenuItems {
+  hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  a:hover {
+    background-color: $mui-primary-color !important;
+  }
+}
