@@ -22,6 +22,8 @@
   &.SignInPopup,
   &.ApplyButton {
     @extend .mui-btn--small;
+    padding: 0 10px;
+    font-size: 11px;
   }
 }
 

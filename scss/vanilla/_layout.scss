@@ -4,8 +4,16 @@
 ///
 
 // Main body layout
-#Panel {
-  width: 25%;
+@media (min-width: $mui-screen-lg-min) {
+  #Panel {
+    width: 25%;
+  }
+
+  #Body {
+    .mui-container {
+      padding: 100px 50px;
+    }
+  }
 }
 
 @media (max-width: $mui-screen-lg-min) {
@@ -13,21 +21,14 @@
     width: 95%;
     display: block;
     margin: auto auto auto 15px;
+  }
 
-    #Body {
-
-      .mui-container {
-        padding: 100px 10px 20px 10px;
-      }
+  #Body {
+    .mui-container {
+      padding: 100px 0 20px 0;
     }
   }
-}
 
-#Body {
-
-  .mui-container {
-    padding: 100px;
-  }
 }
 
 // Breadcrumbs
@@ -83,6 +84,7 @@ div.Categories {
     }
   }
 }
+
 #sidenav {
   .mui--text-title {
     line-height: $mui-appbar-height;
