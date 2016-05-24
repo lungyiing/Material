@@ -57,18 +57,22 @@
   &.SpNotifications::before {
     content: 'public';
   }
+
   &.SpEnvelope::before,
   &.SpInbox::before {
     content: 'email';
   }
+
   &.SpBookmarks::before {
     content: 'star';
   }
+
   &.SpDashboard::before,
   &.SpCog::before,
   &.SpOptions::before {
     content: 'apps';
   }
+
   &.SpEditProfile::before {
     content: 'create';
   }

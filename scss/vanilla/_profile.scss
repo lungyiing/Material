@@ -28,5 +28,29 @@
 }
 
 .ProfilePhotoLarge {
-  border-radius: 80px;
+  border-radius: 50%;
+}
+
+// Profile form background
+body.Profile.EditMode #Content form {
+  @extend .mui-panel;
+
+  .RadioLabel {
+    position: relative;
+  }
+
+  label[for="Form_Gender"] {
+    position: relative;
+  }
+
+  .InputBox {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+    margin-top: 10px;
+
+    &:focus {
+      border-bottom-color: $mui-primary-color;
+      border-width: 2px;
+    }
+  }
 }
