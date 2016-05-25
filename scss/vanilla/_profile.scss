@@ -19,14 +19,8 @@
 }
 
 // Material design-style avatars
-.ProfilePhotoSmall {
-  border-radius: 10px;
-}
-
-.ProfilePhotoMedium {
-  border-radius: 20px;
-}
-
+.ProfilePhotoSmall,
+.ProfilePhotoMedium,
 .ProfilePhotoLarge {
   border-radius: 50%;
 }
@@ -44,7 +38,7 @@ body.Profile.EditMode #Content form {
   }
 
   .InputBox {
-    border: none;
+    border: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.26);
     margin-top: 10px;
 

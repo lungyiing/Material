@@ -18,9 +18,9 @@
 
 @media (max-width: $mui-screen-lg-min) {
   #Panel {
-    width: 95%;
     display: block;
     margin: auto auto auto 15px;
+    width: 95%;
   }
 
   #Body {
@@ -47,12 +47,12 @@
   }
 
   a {
-    color: black !important;
+    color: $van-color-black !important;
   }
 }
 
 .CategoryName a {
-  color: black;
+  color: $van-color-black;
 }
 
 // Mixed layout
@@ -60,7 +60,7 @@ div.Categories {
   @extend .mui-panel;
 
   a {
-    color: black !important;
+    color: $van-color-black !important;
   }
 }
 
@@ -69,7 +69,7 @@ div.Categories {
   @extend .mui-panel;
 
   a {
-    color: black !important;
+    color: $van-color-black !important;
   }
 }
 
@@ -79,8 +79,8 @@ div.Categories {
     line-height: $mui-appbar-height;
 
     img {
-      max-width: 200px;
       height: auto;
+      max-width: 200px;
     }
   }
 }
@@ -91,10 +91,10 @@ div.Categories {
   }
   li {
     a {
-      display: block;
-      padding: 15px 22px;
       cursor: pointer;
+      display: block;
       font-weight: bold;
+      padding: 15px 22px;
       @extend .mui--text-black;
 
       &:hover {
@@ -119,27 +119,27 @@ div.Categories {
   }
 
   .InputBox {
-    width: auto;
-    display: block;
-    padding: 5px 10px;
-    height: 50px;
-    font-size: inherit;
-
-    margin: 10px auto auto;
-
     background: transparent !important;
     border-color: transparent;
+    color: $van-color-white !important;
+    display: block;
+    font-size: inherit;
 
-    color: white !important;
+    height: 50px;
+
+    margin: 10px auto auto;
+    padding: 5px 10px;
+
+    width: auto;
     @extend .mui--text-title;
 
     &::placeholder {
-      color: white !important;
+      color: $van-color-white !important;
       @extend .mui--text-title;
     }
 
     &:focus {
-      border-color: white !important;
+      border-color: $van-color-white !important;
       height: 50px;
     }
   }

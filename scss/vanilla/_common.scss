@@ -22,8 +22,8 @@
   &.SignInPopup,
   &.ApplyButton {
     @extend .mui-btn--small;
-    padding: 0 10px;
     font-size: 11px;
+    padding: 0 10px;
   }
 }
 
@@ -68,8 +68,8 @@ input.SmallInput:focus, input.InputBox:focus, textarea:focus {
   }
 
   &.AlertMessage {
-    background: mui-color("amber", "A700");
-    color: mui-color("black");
+    background: mui-color('amber', 'A700');
+    color: $van-color-black;
   }
 
   &.WarningMessage {
@@ -82,17 +82,17 @@ span.Warning,
 div.Warning {
   @extend .mui-panel;
 
-  border: none;
-
   background: $mui-btn-danger-bg-color;
+
+  border: 0;
   color: $mui-btn-danger-font-color;
 }
 
 // Dropdown menus
 .MenuItems {
   hr {
-    margin-top: 5px;
     margin-bottom: 5px;
+    margin-top: 5px;
   }
 
   a:hover {

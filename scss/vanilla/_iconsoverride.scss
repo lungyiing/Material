@@ -17,41 +17,41 @@
 }
 
 .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px; /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
   direction: ltr;
-
-  /* Support for all WebKit browsers. */
+  display: inline-block;
+  font-family: 'Material Icons';
+  font-feature-settings: 'liga'; /* Preferred icon size */
+  font-size: 24px;
   -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
   -moz-osx-font-smoothing: grayscale;
 
+  /* Support for all WebKit browsers. */
+  text-rendering: optimizeLegibility;
+  /* Support for Safari and Chrome. */
+  text-transform: none;
+
+  /* Support for Firefox. */
+  white-space: nowrap;
+
   /* Support for IE. */
-  font-feature-settings: 'liga';
+  word-wrap: normal;
 }
 
 // Vanilla mapping css
 .Sprite16 {
   background: none;
   @extend .material-icons;
+  color: $van-color-black !important;
+  display: block;
   font-size: 20px;
   height: 16px;
-  width: 16px;
-  display: block;
-  color: black !important;
   position: relative;
   right: 3px;
+  width: 16px;
 
   &.SpGlobe::before,
   &.SpNotifications::before {

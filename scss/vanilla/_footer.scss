@@ -13,23 +13,23 @@ html, body {
 }
 
 main {
-  min-height: 100%;
+  margin-bottom: -$van-footer-height;
   /* equal to footer height */
-  margin-bottom: -$footer-height;
+  min-height: 100%;
 }
 
 main:after {
-  content: "";
+  content: '';
   display: block;
 }
 
 footer, main:after {
-  height: $footer-height;
+  height: $van-footer-height;
 }
 
 // Actual footer styling
 footer {
-  height: $footer-height;
-  padding: 30px;
   background-color: $mui-appbar-bg-color;
+  height: $van-footer-height;
+  padding: 30px;
 }

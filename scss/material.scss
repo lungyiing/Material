@@ -10,7 +10,9 @@
 @import "mui";
 
 // Config
-$footer-height: 100px;
+$van-footer-height: 100px;
+$van-color-black: #000;
+$van-color-white: #fff;
 
 // Import hacks
 @import "vanilla/iconsoverride";
